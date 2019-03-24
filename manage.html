@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Manage profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
+</head>
+<body>
+    <div class="container02">
+        <div id="manage-container">
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="lastname" placeholder="Last Name">
+            <input type="text" id="birth" placeholder="Date of Birth">
+            <input type="text" id="hometown" placeholder="Hometown">
+            <button id="btn-add">Add Student</button>
+        </div>
+
+
+    <table id="student-list"></table>
+
+
+        <script src="script.js"></script>  
+        
+    
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <input type="hidden" id="modal_index">
+                <input type="text" id="modal_name" placeholder="Name">
+                <input type="text" id="modal_lastname" placeholder="Last Name">
+                <button class="modal-update">Update</button>
+                <button class="modal-close">Cancel</button>
+            </div>
+        </div>
+    
+
+        <div id="removeModal" class="modal">
+            <div class="modal-content2">
+                <h4>Confirmation Dialog</h4>
+                <input type="hidden" id="modal_remove_index">
+                <span id="remove-full-name"></span>
+                <button class="modal-remove-yes">Yes</button>
+                <button class="modal-remove-no">No</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
